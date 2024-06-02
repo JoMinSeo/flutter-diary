@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_diary/app/auth/auth.dart';
+import 'package:flutter_diary/features/auth/data_source/local/auth.dart';
 import 'package:flutter_diary/app/auth/auth_controller.dart';
 import 'package:flutter_diary/app/router/routes.dart';
 import 'package:go_router/go_router.dart';

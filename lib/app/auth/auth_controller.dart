@@ -1,4 +1,5 @@
-import 'package:flutter_diary/app/auth/auth.dart';
+import 'package:flutter_diary/core/modules/local/app_local.dart';
+import 'package:flutter_diary/features/auth/data_source/local/auth.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -11,7 +12,7 @@ class AuthController extends _$AuthController {
 
   @override
   Future<Auth> build() async {
-    _hiveBox = await Hive.openBox('user');
+    _hiveBox = AppLocal.authBox;
 
     _persistenceRefreshLogic();
 
